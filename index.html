@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/abi.js"></script>
+<script src="js/promisifyWeb3.js"></script>
+<script src="js/onload.js"></script>
+</head>
+<body>
+    <h3>This example shows only user Quantity from Golem Token Holders tab.</h3>
+    <div>
+      <text><i>Contract Name: </i></text>
+      <text id="nameOf"></text>
+    </div>
+    <div>
+      <text><i>Contract Address: </i></text>
+      <text id="addressOf"></text>
+    </div>
+    <br>
+    <div>
+        <text>Address: </text>
+        <input type="text" id="address" onkeyup='onAddressKeyUp()'></input>
+        <text id="validAddressMark">invalid</text>
+    </div>
+    <br>
+    <button type="button" id="getBalance" onClick="getBalance();">Get balance</button>
+
+
+    <div id='balance'>
+      <h3>Quantity balance</h3>    
+      <div id="quantity"></div>
+    </div>
+
+</body>
+  <script src="js/app.js"></script>
+</html>
